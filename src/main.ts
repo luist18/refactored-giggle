@@ -8,7 +8,7 @@ import { diffSummary, schemaDiff, upsertGitHubComment } from './diff'
 export async function run(): Promise<void> {
   try {
     // Required fields
-    const githubToken = core.getInput('github_token', { required: true })
+    const githubToken = core.getInput('github-token', { required: true })
     const projectId: string = core.getInput('project_id', { required: true })
     const branchName: string = core.getInput('branch_name', { required: true })
     const apiKey: string = core.getInput('api_key', { required: true })

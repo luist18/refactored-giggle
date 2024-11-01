@@ -38245,7 +38245,7 @@ const diff_1 = __nccwpck_require__(9952);
 async function run() {
     try {
         // Required fields
-        const githubToken = core.getInput('github_token', { required: true });
+        const githubToken = core.getInput('github-token', { required: true });
         const projectId = core.getInput('project_id', { required: true });
         const branchName = core.getInput('branch_name', { required: true });
         const apiKey = core.getInput('api_key', { required: true });
